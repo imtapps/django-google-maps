@@ -1,0 +1,9 @@
+# Ignore bytecode
+*.pyc
+*.pyo
+*.egg-info*
+
+# Ignore Pycharm project settings
+.idea*
+
+dist/*
