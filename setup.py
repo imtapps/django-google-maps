@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="django-google-maps",
-    version="0.4",
+    version="0.5",
     description="Django Google Maps",
     author="Aaron Madison",
     packages=('django_google_maps',),
