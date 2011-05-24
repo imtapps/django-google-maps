@@ -79,7 +79,9 @@ class GeoLocationField(models.CharField):
 
     def get_prep_value(self, value):
         "prepare the value for database query"
-        return "%s,%s" % (value.lat, value.lon)
+        if isinstance(value, GeoPt):
+            return "%s,%s" % (value.lat, value.lon)
+        return value
 
     def get_prep_lookup(self, lookup_type, value):
         # We only handle 'exact' and 'in'. All others are errors.

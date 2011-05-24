@@ -3,12 +3,13 @@ from setuptools import setup
 
 setup(
     name="django-google-maps",
-    version="0.5",
+    version="0.6",
     description="Django Google Maps",
     author="Aaron Madison",
     packages=('django_google_maps',),
     package_dir={'': 'src'},
     install_requires = (
-
+        'mock',
+        'django',
     ),
 )
