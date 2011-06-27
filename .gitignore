@@ -1,9 +1,8 @@
-# Ignore bytecode
+.idea/*
+sample_db
+build/*
+*.egg-info
+dist
+
 *.pyc
 *.pyo
-*.egg-info*
-
-# Ignore Pycharm project settings
-.idea*
-
-dist/*
