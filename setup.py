@@ -5,7 +5,7 @@ from setuptools import setup
 from django_google_maps import VERSION
 
 REQUIREMENTS = [
-    'django',
+    'django<1.6',
     'mock',
 ]
 README = os.path.join(os.path.dirname(__file__), 'README.md')
